@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<android.support.v7.widget.Toolbar
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Prueba Inventarios"
+        android:textSize="12dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/editTextColorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+
+</android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:fillViewport="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/linearButtonRegistrarInventario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonRegistrarProductos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorbotoninventarios"
+                    android:text="@string/capturarInventarios" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearRegistrarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imagenProductoGoldenInventariosTres"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/buttonImagenProductoInventariosTres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorbotoninventarios"
+                android:text="@string/capturarInventario" />
+
+            <ToggleButton
+                android:id="@+id/toogleButtonPrecioOfertaGoldenInventariosTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:checked="false"
+                android:textOff="sin precio oferta"
+                android:textOn="precio oferta"
+                />
+            
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinnerProductoGoldenInventariosTres"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                app:hintText="Seleccione Un Producto Golden."
+                android:background="@color/colorbotoninventarios" />
+
+            <EditText
+                android:id="@+id/editTextCantidadGoldenInventariosTres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/Cantidad"
+                android:maxLength="5"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/editTextPrecioGoldenInventariosTres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/Precio"
+                android:maxLength="5"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextPrecioGoldenOfertaInventariosTres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/Precio"
+                android:maxLength="5"
+                android:inputType="numberDecimal"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCompetenciaInventario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imagenProductoCompetenciaInventariosTres"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/buttonImagenProductoCompetenciaInventariosTres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorbotonasistecnias"
+                android:text="Tomar Fotografía Competencia" />
+
+            <ToggleButton
+                android:id="@+id/toogleButtonPrecioOfertaCompetenciaInventariosTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:checked="false"
+                android:textOff="sin precio oferta"
+                android:textOn="precio oferta"
+                />
+
+            <TextView
+                android:id="@+id/textViewProductosCompetenciaInventariosTres"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:text="Seleccione Producto Golden"
+                android:textAlignment="center"
+                android:textColor="@color/TextColorBlack"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/editTextPrecioCompetenciaInventariosTres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/Precio"
+                android:maxLength="5"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextPrecioCompetenciaOfertaInventariosTres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/Precio"
+                android:maxLength="5"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LinearButtonEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/buttonEnviarInventariosInventariosTres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorbotonmostrarpdfligth"
+                android:layout_marginBottom="5dp"
+                android:text="@string/text_button_enviar" />
+
+        </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

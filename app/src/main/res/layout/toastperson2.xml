@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/custom_toast_container2"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:background="@drawable/backgroundtoast2"
+        android:id="@+id/textToas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/toastmal"
+        android:drawablePadding="12dp"
+        android:padding="6dp"
+        android:text="@string/tab_inicio"
+        android:textColor="@color/TextColorBlack"
+        />
+
+</LinearLayout>

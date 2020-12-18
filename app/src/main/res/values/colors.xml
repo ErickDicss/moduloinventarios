@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#3D5AFE</color>
+    <color name="editTextColorWhite">#FFFFFF</color>
+    <color name="backgroundtext_card">#53292929</color>
+    <color name="TextColorBlack">#000000</color>
+
+    <color name="colorbotonchecks">#26A69A</color>
+    <color name="colorbotoncheckslight">#30d0c1</color>
+
+    <color name="colorbotonreportes">#FDD835</color>
+
+    <color name="colorbotonasistecnias">#AB47BC</color>
+    <color name="colorbotonasistecniaslight">#c176cd</color>
+
+    <color name="colorbotonnoticias">#F57C00</color>
+    <color name="colorbotonnoticiaslight">#ff9a33</color>
+
+    <color name="colorbotonasistenciassup">#ff5983</color>
+    <color name="colorbotonasistenciassuplight">#ffafc3</color>
+
+    <color name="colorbotoninventarios">#00b7d3</color>
+    <color name="colorbotoninventarioslight">#09deff</color>
+
+    <color name="colorbotonexhibiciones">#ff6659</color>
+    <color name="colorbotonexhibicioneslight">#ffb5af</color>
+
+    <color name="colorbotonmensajes">#df78ef</color>
+    <color name="colorbotonmensajeslight">#f2c8f9</color>
+
+    <color name="colorbotonmostrarpdf">#64dd17</color>
+    <color name="colorbotonmostrarpdfligth">#86ec45</color>
+
+    <color name="colorWhitteTransparent">#99FFFFFF</color>
+
+    <color name="colorbotonmostrarfrentes">#78909c</color>
+    <color name="colorbotonmostrarfrenteslight">#a0b1b9</color>
+</resources>
